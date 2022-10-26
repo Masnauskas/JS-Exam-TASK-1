@@ -10,7 +10,6 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 ------------------------------------------------------------------- */
 
 const form = document.querySelector("form");
-const submitButton = document.getElementById("submit-btn");
 
 function convertWeight(event) {
   event.preventDefault();
