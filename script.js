@@ -10,9 +10,16 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 ------------------------------------------------------------------- */
 
 const form = document.querySelector("form");
+const submitButton = document.getElementById("submit-btn");
 
-function convertWeight() {
+function convertWeight(event) {
+  event.preventDefault();
   const weightData = document.getElementById("search").value;
+  const outputData = document.getElementById("output");
+
+  outputData.textContent = `Pounds: ${weightData * 2.2046} lbs, Grams: ${
+    weightData / 0.001
+  } g, Ounces: ${weightData * 35.274} oz`;
 }
 
-form.addEventListener("submit");
+form.addEventListener("submit", convertWeight);
