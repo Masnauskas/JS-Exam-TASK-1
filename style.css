@@ -64,6 +64,11 @@ form {
   }
 }
 
+#output {
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+}
 /* navigation header */
 nav a {
   text-decoration: none;
