@@ -69,3 +69,45 @@ form {
   font-size: 1.7em;
   font-weight: bold;
 }
+
+/* navigation header */
+nav a {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.navigation-title {
+  color: black;
+  text-align: center;
+}
+.header-wrapper {
+  background-color: #fec631;
+  height: 80px;
+  border-bottom: 2px solid black;
+}
+@media screen and (max-width: 660px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-wrapper {
+    height: 100%;
+  }
+  nav a {
+    margin-bottom: 10px;
+  }
+}
+.current {
+  text-decoration: underline;
+}
